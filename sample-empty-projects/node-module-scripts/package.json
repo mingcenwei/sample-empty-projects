@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "src/index.js",
 	"type": "module",
+	"bin": {},
 	"scripts": {
 		"format": "prettier --check --write --",
 		"format-all": "pnpm run format -- src/** test/**",

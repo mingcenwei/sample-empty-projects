@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "src/index.js",
+	"bin": {},
 	"scripts": {
 		"format": "prettier --check --write --",
 		"format-all": "pnpm run format -- src/** test/**",
