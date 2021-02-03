@@ -1,26 +1,26 @@
 {
 	"name": "sample-empty-projects",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"private": false,
 	"description": "Sample empty projects",
+	"scripts": {},
 	"keywords": [
 		"configurations",
 		"projects"
 	],
+	"author": "Mingcen Wei",
+	"license": "Unlicense",
 	"homepage": "https://github.com/mingcenwei/sample-empty-projects",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mingcenwei/sample-empty-projects.git"
+	},
 	"bugs": {
 		"email": "wmingcen@gmail.com",
 		"url": "https://github.com/mingcenwei/sample-empty-projects/issues"
 	},
 	"engines": {
 		"node": "^15.0.0"
-	},
-	"scripts": {},
-	"author": "Mingcen Wei",
-	"license": "UNLICENSED",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mingcenwei/sample-empty-projects.git"
 	},
 	"devDependencies": {
 		"@tsconfig/recommended": "^1.0.1",
@@ -38,5 +38,6 @@
 		"ts-node": "^9.1.1",
 		"ts-node-dev": "^1.1.1",
 		"typescript": "^4.1.3"
-	}
+	},
+	"dependencies": {}
 }
