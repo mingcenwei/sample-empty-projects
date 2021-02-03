@@ -6,9 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"format": "prettier --check --write --",
-		"format-all": "npm run format -- src/** test/**",
+		"format-all": "pnpm run format -- src/** test/**",
 		"lint": "eslint --",
-		"lint-all": "npm run lint -- src/** test/**",
+		"lint-all": "pnpm run lint -- src/** test/**",
 		"js": "node --disable-proto='delete' --disallow-code-generation-from-strings --enable-source-maps --experimental-repl-await --experimental-modules --experimental-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules --",
 		"start": "pnpm run js -- src/index.js",
 		"test": "pnpm run js -- test/index.js"
