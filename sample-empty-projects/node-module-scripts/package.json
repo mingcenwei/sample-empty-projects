@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"start": "node --disable-proto='delete' --disallow-code-generation-from-strings --enable-source-maps --experimental-repl-await --experimental-modules --experimental-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules index.js --",
-		"test": "node --disable-proto='delete' --disallow-code-generation-from-strings --enable-source-maps --experimental-repl-await --experimental-modules --es-module-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules --"
+		"test": "node --disable-proto='delete' --disallow-code-generation-from-strings --enable-source-maps --experimental-repl-await --experimental-modules --experimental-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules --"
 	},
 	"keywords": [],
 	"author": "",
