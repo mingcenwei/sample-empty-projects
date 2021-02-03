@@ -1,0 +1,41 @@
+{
+	"name": "typescript-scripts",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"format": "prettier --check --write --",
+		"format-all": "pnpm run format -- src/** test/**",
+		"lint": "eslint --",
+		"lint-all": "tsc --project debug.tsconfig.json --noEmit; pnpm run lint -- src/** test/**",
+		"js": "node --disable-proto=delete --disallow-code-generation-from-strings --enable-source-maps --experimental-repl-await --experimental-modules --experimental-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules --",
+		"start": "pnpm run js -- build/src/index.js",
+		"test": "pnpm run js -- build/test/index.js",
+		"ts": "pnpm run js -- utilities/es-module-ts-node.js",
+		"ts-start": "pnpm run ts -- src/index.ts",
+		"ts-test": "pnpm run ts -- test/index.ts",
+		"build": "tsc --project debug.tsconfig.json",
+		"release": "tsc --project release.tsconfig.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "Unlicense",
+	"homepage": "",
+	"repository": {},
+	"bugs": {},
+	"engines": {
+		"node": "^15.0.0"
+	},
+	"devDependencies": {
+		"@tsconfig/recommended": "^1.0.1",
+		"@types/node": "^14.14.9",
+		"@typescript-eslint/eslint-plugin": "^4.14.2",
+		"@typescript-eslint/parser": "^4.14.2",
+		"eslint": "^7.12.0",
+		"js-beautify": "^1.13.0",
+		"prettier": "^2.2.1",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.1.3"
+	}
+}
