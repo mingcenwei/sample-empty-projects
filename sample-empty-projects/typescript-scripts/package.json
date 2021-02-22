@@ -10,7 +10,7 @@
 		"format-all": "pnpm run format -- src/** test/**",
 		"lint": "eslint --",
 		"lint-all": "tsc --project debug.tsconfig.json --noEmit; pnpm run lint -- src/** test/**",
-		"js": "node --disable-proto=delete --disallow-code-generation-from-strings --enable-source-maps --experimental-repl-await --experimental-modules --experimental-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules --",
+		"js": "node --enable-source-maps --experimental-repl-await --experimental-modules --experimental-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules --",
 		"start": "pnpm run js -- build/src/index.js",
 		"test": "pnpm run js -- build/test/index.js",
 		"ts": "pnpm run js -- utilities/es-module-ts-node.js",
