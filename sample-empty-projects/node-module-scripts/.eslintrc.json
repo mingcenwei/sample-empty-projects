@@ -15,7 +15,14 @@
 		"semi": ["error", "always"],
 		"no-useless-escape": ["off"],
 		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
-		"quotes": ["warn", "backtick"]
+		"quotes": ["warn", "backtick"],
+		"no-unused-vars": [
+			"warn",
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_"
+			}
+		]
 	},
 	"overrides": []
 }
