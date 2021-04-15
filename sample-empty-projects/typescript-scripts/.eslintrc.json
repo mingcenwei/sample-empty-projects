@@ -49,6 +49,13 @@
 					}
 				]
 			}
+		},
+		{
+			// override TypeScript rules for plain JavaScript files
+			"files": ["*.js", "*.jsx"],
+			"rules": {
+				"@typescript-eslint/no-unused-vars": ["off"]
+			}
 		}
 	]
 }
