@@ -4,7 +4,7 @@
 import {execFileSync} from "child_process";
 
 if (process.argv.length === 2) {
-	execFileSync(`ts-node`, [], {
+	execFileSync(`ts-node`, [`--project`, `interactive.tsconfig.json`, `--`], {
 		stdio: `inherit`,
 		encoding: `utf8`,
 	});
