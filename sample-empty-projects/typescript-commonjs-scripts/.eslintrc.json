@@ -36,7 +36,7 @@
 			"rules": {
 				"quotes": ["off"],
 				"@typescript-eslint/quotes": ["warn", "backtick"],
-				"no-unused-var": ["off"],
+				"no-unused-vars": ["off"],
 				"@typescript-eslint/no-unused-vars": [
 					"warn",
 					{
