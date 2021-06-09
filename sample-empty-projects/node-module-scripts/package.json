@@ -7,9 +7,9 @@
 	"bin": {},
 	"scripts": {
 		"format": "prettier --check --write --",
-		"format-all": "pnpm run format -- src/** test/**",
+		"format-all": "set --local scripts {src,text}/**.{js,mjs}{,x} ; pnpm run format -- $scripts",
 		"lint": "eslint --",
-		"lint-all": "pnpm run lint -- src/** test/**",
+		"lint-all": "set --local scripts {src,text}/**.{js,mjs}{,x} ; pnpm run lint -- $scripts",
 		"js": "node --enable-source-maps --experimental-repl-await --experimental-modules --experimental-specifier-resolution=node --experimental-import-meta-resolve --experimental-json-modules --experimental-vm-modules --",
 		"start": "pnpm run js -- src/index.js",
 		"test": "pnpm run js -- test/index.js"
