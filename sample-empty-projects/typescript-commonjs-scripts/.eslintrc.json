@@ -1,0 +1,63 @@
+{
+	"env": {
+		"es2021": true,
+		"node": true,
+		"browser": false
+	},
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"indent": ["off"],
+		"linebreak-style": ["warn", "unix"],
+		"semi": ["error", "always"],
+		"no-useless-escape": ["off"],
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"quotes": ["warn", "backtick"],
+		"no-unused-vars": [
+			"warn",
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_"
+			}
+		]
+	},
+	"overrides": [
+		{
+			// enable the rule specifically for TypeScript files
+			"files": ["*.ts", "*.tsx"],
+			"rules": {
+				"quotes": ["off"],
+				"@typescript-eslint/quotes": ["warn", "backtick"],
+				"no-unused-var": ["off"],
+				"@typescript-eslint/no-unused-vars": [
+					"warn",
+					{
+						"argsIgnorePattern": "^_",
+						"varsIgnorePattern": "^_"
+					}
+				],
+				"@typescript-eslint/explicit-module-boundary-types": [
+					"warn",
+					{
+						"allowDirectConstAssertionInArrowFunctions": true
+					}
+				]
+			}
+		},
+		{
+			// override TypeScript rules for plain JavaScript files
+			"files": ["*.js", "*.jsx"],
+			"rules": {
+				"@typescript-eslint/no-unused-vars": ["off"]
+			}
+		}
+	]
+}
