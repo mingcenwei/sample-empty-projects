@@ -89,7 +89,7 @@
 		//"listEmittedFiles": true,
 		//"listFiles": false,
 		/* Do not emit outputs. */
-		//"noEmit": false,
+		"noEmit": true,
 		/* Skip type checking of declaration files. */
 		//"skipLibCheck": true,
 
