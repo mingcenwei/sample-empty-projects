@@ -43,11 +43,13 @@
 		//"jsx": "preserve",
 
 		/* Base directory to resolve non-absolute module names. */
-		//"baseUrl": "./"
+		"baseUrl": ".",
+		/* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+		"paths": {
+			"@/*": ["src/*"]
+		},
 		/* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
 		"moduleResolution": "node",
-		/* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
-		//"paths": {},
 		/* Do not resolve the real path of symlinks. */
 		"preserveSymlinks": false,
 		"resolveJsonModule": true,
